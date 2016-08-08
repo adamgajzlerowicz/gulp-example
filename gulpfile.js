@@ -51,7 +51,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('serve', ['styles-wct','styles'], function() {
 
     browserSync.init({
-        proxy: "http://localhost/shirts-with-buttons/",
+        proxy: "http://localhost/project/",
     });
 
     gulp.watch("./wp-content/plugins/woocommerce-tailors/css/**", ['styles-wct']);
